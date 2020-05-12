@@ -1,0 +1,147 @@
+oc login --token=U9U4_eN6I5rjIP_OOWPVE0X5NMQ7uoUPr4V5L0N4r6w --server=https://c103-e.jp-tok.containers.cloud.ibm.com:30665
+oc version
+cp oc /usr/local/sbin/
+sudo cp oc /usr/local/sbin/
+oc version
+oc login --token=U9U4_eN6I5rjIP_OOWPVE0X5NMQ7uoUPr4V5L0N4r6w --server=https://c103-e.jp-tok.containers.cloud.ibm.com:30665
+oc get limits
+oc get quota
+oc describe quota compute-resources
+oc get all
+sudo oc completion bash >> /etc/bash_completion.d/oc_completion
+sudo oc completion bash>>/etc/bash_completion.d/oc_completion
+oc completion bash
+sudo oc completion bash>>oc_completion
+oc version
+oc login --token=U9U4_eN6I5rjIP_OOWPVE0X5NMQ7uoUPr4V5L0N4r6w --server=https://c103-e.jp-tok.containers.cloud.ibm.com:30665
+oc login --token=ndoIn7Psd2_SokCkPlbLvhIM_oZT24ZR9UR7W9XYmLc --server=https://c103-e.jp-tok.containers.cloud.ibm.com:30665
+oc whoami
+oc login --token=N7iA8TywEm57EAO8yp1Gpnmv-EgWrnzKcf3kzTo_inM --server=https://c103-e.jp-tok.containers.cloud.ibm.com:30665
+oc whoami
+oc run --help
+oc get templates
+oc get templates -n openshift
+oc describe template redis-pesistent -n openshift
+oc describe template redis-persistent -n openshift
+oc export template redis-persistent -n openshift
+oc whoami
+oc cluster-info
+oc --help
+oc cluster --help
+oc cluster status
+oc whoami
+oc projects
+oc login --token=bWeba2eoP9_qgg3_zrKYsQE5NN89lzOMcC2R0zHBvH4 --server=https://c103-e.jp-tok.containers.cloud.ibm.com:30665
+oc get is -n openshift
+oc get is -n openshift | grep core
+oc get is -n openshift | grep dotnet
+oc run dotnet
+oc run --name netcore --image=dotnet 
+oc run name netcore --image=dotnet 
+oc get all
+oc edit dc/name
+oc delete all -l run=name
+oc run netcore --image=dotnet --requests='cpu=100m,memory=200Mi' --limits='cpu=200m,memory=400Mi'
+oc get all
+oc edit dc/netcore
+oc get all
+oc status
+oc logs dc/netcore
+oc describe dc netcore
+oc edit dc/netcore
+oc get all
+oc describe dc netcore
+oc edit dc/netcore
+oc rollout dc netcore
+oc rollout latest  dc netcore
+oc rollout latest  dc/netcore
+oc get all
+oc get dc
+oc get pods
+oc describe dc netcore
+oc get pods
+oc delete all -l run=netcore
+oc get templates -n openshift
+oc get templates -n openshift | grep dotnet
+oc describe template dotnet-pgsql-persistent -n openshift
+oc export template dotnet-pgsql-persistent | less
+oc get --export template dotnet-pgsql-persistent | less
+oc get --export template dotnet-pgsql-persistent -n openshift | less
+oc export template dotnet-pgsql-persistent -n openshift | less
+oc export template dotnet-pgsql-persistent -n openshift > mytemplate.yml
+oc get pvc
+oc get v
+oc get pv
+oc apply -f step-by-step.yml 
+oc get tempates
+oc get templates
+oc new-app --template=dark-horses-app 
+oc apply -f step-by-step.yml 
+oc new-app --template=dark-horses-app 
+oc apply -f step-by-step.yml 
+oc new-app --template=dark-horses-app 
+oc get all
+oc delete service postgresql
+oc delete dc postgresql
+oc get secret
+oc delete secret darkhorsesapp
+oc delete secret darkhorses-app
+oc new-app --template=dark-horses-app 
+oc get pvc
+oc delete pvc postgresql stgresql
+oc delete pvc postgresql 
+oc get pvc
+oc delete secret darkhorses-app
+oc delete dc postgresql
+oc delete service postgresql
+oc status
+oc get all
+oc describe dc postgresql 
+oc get all
+oc rollout latest dc/postgresql
+oc get all
+oc get rc
+oc rollout latest dc/postgresql
+oc run test --docker-image=postgresql:9.5
+oc run test --image=postgresql:9.5
+oc get all
+oc delete all -l name=test
+oc delete rc/test-1
+oc delete dc test
+oc explain dc.spec.triggers
+oc explain dc.spec.triggers.type
+oc get all
+oc describe dc postgresql 
+oc explain dc.spec
+oc get all
+oc describe dc postgresql 
+oc explain dc
+oc explain dc.metadata
+oc explain dc.spec
+oc explain dc.spec.template
+oc explain dc.spec.template.spc
+oc explain dc.spec.template.spec
+oc explain dc.spec.template.spec.containers
+oc new-app --name test --docker-image=docker.io/postgres
+oc export dc test
+oc get all
+oc delete all -l app=tets
+oc delete all -l app=test
+oc get pods
+oc get pods -o wide --watch
+oc logs postgresql-1-rmbt5 
+oc get pods
+oc delete dc
+oc get dc
+oc delete dc postgresql
+oc get all
+oc get pods --watch
+oc rsh postgresql-1-8f5k5 
+oc logs postgresql-1-8f5k5 
+oc whoami
+oc delete dc postgresql
+oc get pods -w
+oc get pods
+oc port-forward 5000:postgresql-1-t6h4x:5432
+oc port-forward -h
+oc port-forward postgresql-1-t6h4x 5000:5432
