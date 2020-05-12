@@ -1,0 +1,2 @@
+oc apply -f step-by-step.yml
+oc new-app --template=dark-horses-app

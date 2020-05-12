@@ -1,0 +1,5 @@
+oc delete all -l app=dark-horses-app
+oc delete pvc postgresql
+oc delete dc postgresql
+oc delete service postgresql
+oc delete secret darkhorses-app
